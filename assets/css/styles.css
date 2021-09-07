@@ -75,7 +75,7 @@ section h1 {
 .CVTEXT {
     background-color: black;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:0.5fr 1fr;
     grid-template-areas:
     "grid1 grid2";
 }
@@ -201,3 +201,7 @@ section h1 {
     margin-right: auto;
     width: 100%;
   }
+
+.left {
+    width: 23em;
+}
