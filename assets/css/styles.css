@@ -1,0 +1,203 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introname {    
+    position: absolute;
+    background-color: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    /* transform: rotate(270deg); */
+}
+
+.intro ul {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+
+section {
+    color: white;
+}
+
+section h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 70 px;
+}
+
+
+
+.CV {
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.CVTEXT {
+    background-color: black;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "grid1 grid2";
+}
+
+.grid1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.grid2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-weight: bold;
+    justify-self: left;
+}
+
+.SCHULBILDUNG1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.SCHULBILDUNG2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-weight: bold;
+    justify-self: left;
+}
+
+.SPRACHKENTNISSE1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.SPRACHKENNTISSE2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-weight: bold;
+    justify-self: left;
+}
+.BERUFSERFAHRUNG1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.BERUFSERFAHRUNG2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-weight: bold;
+    justify-self: left;
+}
+
+.BF2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-size: medium;
+    font-weight: bold;
+    justify-self: left;
+    white-space: pre-line;
+}
+
+
+.AK1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.AK2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-size: medium;
+    font-weight: bold;
+    justify-self: left;
+    white-space: pre-line;
+}
+
+.BK1 {
+    padding-top: 100px;
+    grid-area: grid1;
+    justify-self: center;
+}
+
+.BK2 {
+    padding-top: 100px;
+    grid-area: grid2;
+    font-size: medium;
+    font-weight: bold;
+    justify-self: left;
+    white-space: pre-line;
+}
+
+
+.mailname{
+    grid-area: mail;
+    justify-self: center;
+    position: relative;
+    left: -30px;
+    transform: rotate(270deg);
+    padding-top: 300px;
+    font-size: small;
+    color: gray;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+#CS50 {
+    position: relative;
+    bottom: 1fr;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+#SQL {
+    position: relative;
+    bottom: 1fr;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
