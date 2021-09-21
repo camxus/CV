@@ -8,7 +8,7 @@
     width: 80px;
     height: 80px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
     z-index: 1;
     /* border: 3px solid #fff; */
   }
@@ -17,7 +17,7 @@
     height: 2px;
     background: #fff;
     border-radius: 0px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
     transition: all .5s ease-in-out;
   }
   .menu-btn__burger::before,
@@ -28,7 +28,7 @@
     height: 2px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
     transition: all .5s ease-in-out;
   }
   .menu-btn__burger::before {
@@ -38,6 +38,13 @@
     transform: translateY(16px);
   }
   /* ANIMATION */
+  @media only screen and (max-width: 768px) {
+      .menu-btn.open {
+          top: 87%;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+  }
   .menu-btn.open .menu-btn__burger {
     /* transform: translateX(-50px); */
     background: transparent;
@@ -52,3 +59,23 @@
     transform: rotate(-45deg);
     background: black;
   }
+
+.menu-btn__bg {
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 100%;
+    border: 1px solid white;
+    z-index: -1;
+    transition: opacity 1s ease-in-out, background-color .2s ease-in-out;
+}
+
+.menu-btn.open .menu-btn__bg {
+    opacity: 1;
+}
+.menu-btn.open .menu-btn__bg:hover{
+    background-color: white;
+}
+

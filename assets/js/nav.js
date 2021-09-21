@@ -27,11 +27,13 @@ function openbackground(background) {
 function blendelement(element) {
     if (element.style.opacity != "1")
     {
+        element.style.pointerEvents="all";
         element.style.opacity="1";
     }
     else
     {
         element.style.opacity="0";
+        element.style.pointerEvents="none";
     }
     console.log("done")
 }
