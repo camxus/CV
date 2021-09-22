@@ -1,14 +1,20 @@
-@media only screen and (max-width:768px){
+@media only screen and (max-width:769px){
     .tabarea {
         width: 83vw;
-        height: 18vh;
+        height: 100%;
+    }
+    .demopages-tabs {
+        height: 65vh;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .tabarea {
         width: 380px;
-        height: 100%;
+        height: 240px;
+    }
+    .demopages-tabs {
+        height: 40%
     }
 }
 
@@ -81,7 +87,7 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    height: 65vh;
+    /* height: 65vh; */
     transition: all 0.5s ease-in-out;
     pointer-events: none;
 
