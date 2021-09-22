@@ -137,7 +137,7 @@
     position: relative;
     width: 83%;
     left: 50%;
-    top: 5%;
+    top: 0%;
     transform: translateX(-50%);
     height: 10%;
     transition: all 1s;
