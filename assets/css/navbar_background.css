@@ -8,7 +8,7 @@
 @media only screen and (min-width: 768px) {
     .tabarea {
         width: 380px;
-        height: 240px;
+        height: 100%;
     }
 }
 
@@ -45,7 +45,9 @@
     top: 1000vh;
     position: relative;
     background-color: black;
-    transition: top 0.25s ease-in-out;
+    border: 1px grey solid;
+    border-bottom: none;
+    transition: top 0.25s ease-in-out, border 1s ease-in-out;
 }
 
 
@@ -79,7 +81,7 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    /* height: 39vh; */
+    height: 65vh;
     transition: all 0.5s ease-in-out;
     pointer-events: none;
 

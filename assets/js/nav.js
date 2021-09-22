@@ -1,5 +1,5 @@
 // let background = document.querySelectorAll("nav_background_stripes")
-var background = document.getElementsByClassName("nav_background_stripes");
+const background = document.getElementsByClassName("nav_background_stripes");
 const myname = document.getElementsByClassName("name");
 const title = document.getElementsByClassName("title");
 const tab = document.getElementsByClassName("demopages-tabs");
@@ -12,12 +12,15 @@ let state = false;
 function openbackground(background) {
     if (background.style.top != "0vh")
     {
-        background.style.top = "0vh"
+        background.style.top = "0vh";
+        background.style.border = "1px solid black";
         // console.log("close")
     }
     else
     {
         background.style.top = "100vh"
+        background.style.border = "1px solid grey";
+
         // console.log("open")
     }
 }
