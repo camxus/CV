@@ -64,115 +64,132 @@ let scene3 = new ScrollMagic.Scene({
 .addTo(controller)
 
 
-const textCV = document.querySelector('h1')
 
-//TEXT ANIMATION
-const textCVAnim = TweenMax.fromTo(textCV, 3, { opacity: 0 }, { opacity: 1 });
+// GITHUB ANIMATION
+const GH = document.querySelector('.githubarea');
 
-let sceneCV = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textCV,
-    triggerHook: 0.7,
+const ghAnim = TweenMax.fromTo(GH, 3, { opacity: 0 }, { opacity: 1 });
+
+let sceneGH = new ScrollMagic.Scene({
+    duration: 1000,
+    triggerElement: GH,
+    triggerHook: 300,
 })
-.setTween(textCVAnim)
+.setTween(ghAnim)
 .addTo(controller)
-
-
-const textPD = document.querySelector('.PD')
-
-//TEXT ANIMATION
-const textPDAnim = TweenMax.fromTo(textPD, 3, { opacity: 0 }, { opacity: 1 });
-
-let scenePD = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textPD,
-    triggerHook: 0.7,
-})
-.setTween(textPDAnim)
-.addTo(controller)
-
-const textSB = document.querySelector('.SB')
-
-//TEXT ANIMATION
-const textSBAnim = TweenMax.fromTo(textSB, 3, { opacity: 0 }, { opacity: 1 });
-
-let sceneSB = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textSB,
-    triggerHook: 0.7,
-})
-.setTween(textSBAnim)
-.addTo(controller)
-
-
-const textSK = document.querySelector('.SK')
-
-//TEXT ANIMATION
-const textSKAnim = TweenMax.fromTo(textSK, 3, { opacity: 0 }, { opacity: 1 });
-
-let sceneSK = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textSK,
-    triggerHook: 0.7,
-})
-.setTween(textSKAnim)
-.addTo(controller)
-
-const textBE = document.querySelector('.BE')
-
-//TEXT ANIMATION
-const textBEAnim = TweenMax.fromTo(textBE, 3, { opacity: 0 }, { opacity: 1 });
-
-let sceneBE = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textBE,
-    triggerHook: 0.7,
-})
-.setTween(textBEAnim)
-.addTo(controller)
+.setPin(GH)
 
 
 
-const textBF = document.querySelector('.BF')
+// const textCV = document.querySelector('h1')
 
-//TEXT ANIMATION
-const textBFAnim = TweenMax.fromTo(textBF, 3, { opacity: 0 }, { opacity: 1 });
+// //TEXT ANIMATION
+// const textCVAnim = TweenMax.fromTo(textCV, 3, { opacity: 0 }, { opacity: 1 });
 
-let sceneBF = new ScrollMagic.Scene({
-    duration: 500,
-    triggerElement: textBF,
-    triggerHook: 0.7,
-})
-.setTween(textBFAnim)
-.addTo(controller)
-
-
-const textAK = document.querySelector('.AK')
-
-//TEXT ANIMATION
-const textAKAnim = TweenMax.fromTo(textAK, 3, { opacity: 0 }, { opacity: 1 });
-
-let sceneAK = new ScrollMagic.Scene({
-    duration: 300,
-    triggerElement: textAK,
-    triggerHook: 0.8,
-})
-.setTween(textAKAnim)
-.addTo(controller)
+// let sceneCV = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textCV,
+//     triggerHook: 0.7,
+// })
+// .setTween(textCVAnim)
+// .addTo(controller)
 
 
-const textBK = document.querySelector('.BK')
+// const textPD = document.querySelector('.PD')
 
-//TEXT ANIMATION
-const textBKAnim = TweenMax.fromTo(textBK, 3, { opacity: 0 }, { opacity: 1 });
+// //TEXT ANIMATION
+// const textPDAnim = TweenMax.fromTo(textPD, 3, { opacity: 0 }, { opacity: 1 });
 
-let sceneBK = new ScrollMagic.Scene({
-    duration: 300,
-    triggerElement: textBK,
-    triggerHook: 1,
-})
-.setTween(textBKAnim)
-.addTo(controller)
+// let scenePD = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textPD,
+//     triggerHook: 0.7,
+// })
+// .setTween(textPDAnim)
+// .addTo(controller)
+
+// const textSB = document.querySelector('.SB')
+
+// //TEXT ANIMATION
+// const textSBAnim = TweenMax.fromTo(textSB, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneSB = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textSB,
+//     triggerHook: 0.7,
+// })
+// .setTween(textSBAnim)
+// .addTo(controller)
+
+
+// const textSK = document.querySelector('.SK')
+
+// //TEXT ANIMATION
+// const textSKAnim = TweenMax.fromTo(textSK, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneSK = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textSK,
+//     triggerHook: 0.7,
+// })
+// .setTween(textSKAnim)
+// .addTo(controller)
+
+// const textBE = document.querySelector('.BE')
+
+// //TEXT ANIMATION
+// const textBEAnim = TweenMax.fromTo(textBE, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneBE = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textBE,
+//     triggerHook: 0.7,
+// })
+// .setTween(textBEAnim)
+// .addTo(controller)
+
+
+
+// const textBF = document.querySelector('.BF')
+
+// //TEXT ANIMATION
+// const textBFAnim = TweenMax.fromTo(textBF, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneBF = new ScrollMagic.Scene({
+//     duration: 500,
+//     triggerElement: textBF,
+//     triggerHook: 0.7,
+// })
+// .setTween(textBFAnim)
+// .addTo(controller)
+
+
+// const textAK = document.querySelector('.AK')
+
+// //TEXT ANIMATION
+// const textAKAnim = TweenMax.fromTo(textAK, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneAK = new ScrollMagic.Scene({
+//     duration: 300,
+//     triggerElement: textAK,
+//     triggerHook: 0.8,
+// })
+// .setTween(textAKAnim)
+// .addTo(controller)
+
+
+// const textBK = document.querySelector('.BK')
+
+// //TEXT ANIMATION
+// const textBKAnim = TweenMax.fromTo(textBK, 3, { opacity: 0 }, { opacity: 1 });
+
+// let sceneBK = new ScrollMagic.Scene({
+//     duration: 300,
+//     triggerElement: textBK,
+//     triggerHook: 1,
+// })
+// .setTween(textBKAnim)
+// .addTo(controller)
 
 
 const CS50 = document.querySelector('.CERTIFICATES')
