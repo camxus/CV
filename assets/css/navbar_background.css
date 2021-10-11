@@ -164,11 +164,11 @@
     background-color: white;
 }
 
-.resumewrapper:hover h1 a{
+.resumewrapper:hover h1{
     color: black;
 }
 
-.resume h1 a{
+.resume h1{
     position: absolute;
     top: 50%;
     left: 50%;

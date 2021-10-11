@@ -73,7 +73,7 @@ const ghAnim = TweenMax.fromTo(GH, 3, { opacity: 0 }, { opacity: 1 });
 let sceneGH = new ScrollMagic.Scene({
     duration: 1000,
     triggerElement: GH,
-    triggerHook: 300,
+    triggerHook: 0,
 })
 .setTween(ghAnim)
 .addTo(controller)
