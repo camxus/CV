@@ -66,7 +66,7 @@ let scene3 = new ScrollMagic.Scene({
 
 
 // GITHUB ANIMATION
-const GH = document.querySelector('.githubarea');
+const GH = document.querySelector('.github_pane');
 
 const ghAnim = TweenMax.fromTo(GH, 3, { opacity: 0 }, { opacity: 1 });
 

@@ -208,7 +208,7 @@ section h1 {
 }
 
 
-.githubarea {
+.github_pane {
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -216,33 +216,57 @@ section h1 {
 
 .calendar {
     transform: translate(-50%, -50%);
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     border: 0px solid #DDDDDD ! important;
 }
 
+.table-column {
+    display: table-cell ! important;
+    width: 1% ! important;
+    padding-right: 10px ! important;
+    padding-left: 10px ! important;
+    vertical-align: top ! important;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(0,0,0,0) 100%) ! important;
+    }
+    
 .contrib-column {
+    padding: 15px 0 ! important;
+    text-align: center ! important;
+    border-left: 0px solid #ddd ! important;
     border-top: 0px solid #ddd ! important;
+    font-size: 11px ! important;
+    }
+
+.contrib-number {
+    line-height: 1.3em ! important;
+    font-size: 24px ! important;
+    display: block ! important;
+    color: white ! important;
+    text-transform: uppercase ! important;
+    }
+.text-muted {
+    color: white;
 }
 
 .header {
     font-weight: bold;
-    font-size: 5rem;
-    color: white;
+    font-size: 24rem;
+    color: transparent;
     position: absolute;
-    top: 18vh;
-    left: 25vw;
+    top: -6vh;
+    left: 0;-webkit-text-stroke: 2px rgb(69, 69, 69);
     }
 
 @media only screen and (max-width:769px){
-    .githubarea{
+    .github_pane{
         display: none;
     }
 }
 
 @media only screen and (min-width:769px){
-    .githubarea{
+    .github_pane{
         display: block;
     }
 }
