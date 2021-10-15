@@ -10,7 +10,7 @@
     cursor: pointer;
     /* transition: all .5s ease-in-out; */
     z-index: 1;
-    /* border: 3px solid #fff; */
+    /* border: 3px solid #fff; */pointer-events: all;
   }
   .menu-btn__burger {
     width: 40px;
