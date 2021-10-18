@@ -52,6 +52,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px white;
     position: relative; 
+    display: inline-block;
 }
 
 .introname--sub::after {
