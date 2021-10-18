@@ -44,7 +44,18 @@ body {
     height: 100%;
     position: absolute;transform: translateY(-100%);
     right: 0;
-    animation: openup 0.7s ease-in 3200ms forwards;
+}
+
+@media only screen and (max-width:769px){
+    .introname::after {
+        animation: openup 0s ease-in 3000ms forwards;
+    }
+}
+
+@media only screen and (min-width:769px){
+    .introname::after {
+        animation: openup 0.7s ease-in 3200ms forwards;
+    }
 }
 
 .introname--sub {
