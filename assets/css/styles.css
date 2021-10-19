@@ -32,6 +32,11 @@ body {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 769px) {
+    .introname--pane {
+        transform: scale(0.7);left: -7%;top: 45%;}
+}
+
 .introname,
 .introname--sub {
     display: inline-block;
@@ -43,7 +48,7 @@ body {
     font-size: 5vmax;
 }
 .introname--sub {
-    font-size: 3vw; 
+    font-size: 3vmax; 
     color: transparent;
     -webkit-text-stroke: 1px white;display: block;
 }
@@ -85,10 +90,9 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;;
-    bottom: 100%;
-    left: 77%;
+    bottom: 100%;width: 23%;
     overflow: hidden;
-    animation: openclose 2s ease-in-out 4s forwards;
+    animation: openclose 2s ease-in-out 4s ;
 }
 
 @keyframes openclose {
@@ -99,7 +103,7 @@ body {
 }
 .box--title {
     -webkit-text-stroke: 1px black;
-    position: absolute;left: -53.5vw;top: 10vh;
+    position: absolute;left: -335.1%;top: 0;
 }
 
 .intro ul {
