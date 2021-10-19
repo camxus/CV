@@ -45,7 +45,7 @@ body {
 .introname--sub {
     font-size: 3vw; 
     color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px white;display: block;
 }
 
 .introname::after,
@@ -72,10 +72,10 @@ body {
 
 @keyframes openup {
     0% { width: 100%; 
-        background-color: grey;
+        background-color: rgb(216, 216, 216);
         outline: 1px solid gray;}
     100% { width: 0%; 
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         outline-color: black;
         outline-width: 0px;}
 }
