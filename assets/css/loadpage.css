@@ -16,7 +16,7 @@
     color: white;
     font-weight: bold;
     text-decoration:none;
-    animation: rise 3s ease 0.5s;
+    animation: rise 3s ease 0.5s forwards;
     pointer-events: none;
     top: -100%;left: 50%;transform: translateX(-50%);display: inline-block;
 }
