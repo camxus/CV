@@ -13,12 +13,22 @@
     /* border: 3px solid #fff; */pointer-events: all
     ;animation: moveright 700ms ease-in-out 4000ms forwards;
   }
-  @keyframes moveright {
-  0% {right: 50%}
-  100% {right: 0%;
-    transform: translateX(0%);}
-  }
 
+  @media only screen and (max-width: 769px){
+    @keyframes moveright {
+      0% {right: 50%}
+      100% {right: 0%;
+        transform: translateX(-50%);}
+      }  
+  }
+  @media only screen and (min-width: 769px){
+    @keyframes moveright {
+    0% {right: 50%}
+    100% {right: 0%;
+      transform: translateX(0%);}
+    }  
+  }
+  
   .menu-btn__burger {
     width: 40px;
     height: 2px;
