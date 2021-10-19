@@ -80,6 +80,28 @@ body {
         outline-width: 0px;}
 }
 
+.box {
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    right: 0%;;
+    bottom: 100%;
+    left: 77%;
+    overflow: hidden;
+    animation: openclose 2s ease-in-out 4s forwards;
+}
+
+@keyframes openclose {
+    0% {bottom: 100%}
+    25% {bottom: 0%}
+    75% {bottom: 0%}
+    1000% {bottom: 100%}
+}
+.box--title {
+    -webkit-text-stroke: 1px black;
+    position: absolute;left: -53.5vw;top: 10vh;
+}
+
 .intro ul {
     position: absolute;
     bottom: 10%;
