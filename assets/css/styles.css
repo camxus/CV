@@ -32,14 +32,24 @@ body {
     font-weight: bold;
 }
 
-.introname {
-    font-size: 5vmax;
-    color: white;
+.introname,
+.introname--sub {
     display: inline-block;
     position: relative; 
 }
 
-.introname::after {
+.introname {
+    color: white;
+    font-size: 5vmax;
+}
+.introname--sub {
+    font-size: 3vw; 
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.introname::after,
+.introname--sub::after {
     background-color: gray;
     content: " ";
     width: 100%;
@@ -47,43 +57,17 @@ body {
     position: absolute;
     /* transform: translateY(-100%); */
     right: 0;
+    top: 0%;
 }
 
-@media only screen and (max-width:769px){
-    .introname::after {
-        animation: openup 0s ease-in 3000ms forwards;
-    }
-    .introname--sub::after {
-        animation: openup 0s ease-in 3000ms forwards;
-    }
-
+.introname::after {
+    animation: openup 0.7s ease-in 3200ms forwards;
 }
 
-@media only screen and (min-width:769px){
-    .introname::after {
-        animation: openup 0.7s ease-in 3200ms forwards;
-    }
-    .introname--sub::after {
-        animation: openup 0.7s ease-in 3500ms forwards;
-    }
-}
-
-.introname--sub {
-    font-size: 3vw; 
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-    position: relative; 
-    /* display: inline-block; */
-}
 
 .introname--sub::after {
-    background-color: grey;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    /* transform: translateY(-100%); */
-    right: 0;
+    animation: openup 0.7s ease-in 3500ms forwards;
+
 }
 
 @keyframes openup {
