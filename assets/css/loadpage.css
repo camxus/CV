@@ -11,7 +11,7 @@
 
 .loadingname {    
     position: absolute;
-    font-size: 2vw;
+    font-size: 2.5vmin;
     white-space: nowrap;
     color: white;
     font-weight: bold;

@@ -34,7 +34,9 @@ body {
 
 .introname {
     font-size: 5vmax;
-    color: white;display: inline-block;position: relative; 
+    color: white;
+    display: inline-block;
+    position: relative; 
 }
 
 .introname::after {
@@ -42,7 +44,8 @@ body {
     content: " ";
     width: 100%;
     height: 100%;
-    position: absolute;transform: translateY(-100%);
+    position: absolute;
+    /* transform: translateY(-100%); */
     right: 0;
 }
 
@@ -50,11 +53,18 @@ body {
     .introname::after {
         animation: openup 0s ease-in 3000ms forwards;
     }
+    .introname--sub::after {
+        animation: openup 0s ease-in 3000ms forwards;
+    }
+
 }
 
 @media only screen and (min-width:769px){
     .introname::after {
         animation: openup 0.7s ease-in 3200ms forwards;
+    }
+    .introname--sub::after {
+        animation: openup 0.7s ease-in 3500ms forwards;
     }
 }
 
@@ -71,9 +81,9 @@ body {
     content: " ";
     width: 100%;
     height: 100%;
-    position: absolute;transform: translateY(-100%);
+    position: absolute;
+    /* transform: translateY(-100%); */
     right: 0;
-    animation: openup 0.7s ease-in 3500ms forwards;
 }
 
 @keyframes openup {
