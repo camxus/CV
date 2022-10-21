@@ -12,10 +12,11 @@
 @media only screen and (min-width: 769px) {
     .tabarea {
         width: 380px;
-        height: 240px;
+        height: 100%;
+        max-height: 300px;
     }
     .demopages-tabs {
-        height: 40%
+        height: 60%
     }
 }
 
@@ -25,6 +26,10 @@
     transition: all 0.5s ease-in-out;
     position: relative;
     border: 1px white solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav {
     position: fixed;
@@ -88,7 +93,6 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    /* height: 65vh; */
     transition: all 0.5s ease-in-out;
     pointer-events: none;
 
@@ -132,13 +136,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
-    white-space: nowrap;
+    width: 100%;
     text-align: left;
+    padding: 2rem;
 }
 
 @media only screen and (max-width: 769px) {
     .tab-content {
-        min-width: 40%;
+        min-width: 60%;
         font-size: 2.3vw;
     }
 }
