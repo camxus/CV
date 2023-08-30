@@ -62,7 +62,7 @@ export default [
         title: "Product Showcase: Business Event Scheduling",
         media: "",
         github: "https://github.com/camxus/STUDIO-APPLICATION",
-        // url: "https://personal-documentation.vercel.app/",
+        url: "",
         short_desc: "Event Scheduling Application using React Native",
         long_desc: `<p>Presenting a practical React Native application tailored for businesses to streamline event scheduling and management. This app reflects my dedication to creating technology that seamlessly integrates with modern business operations.</p>
 
