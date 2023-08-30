@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
     const project: Project | undefined = projects.find(p => p.id === id)
     if (!project) throw new Error("INVALID_PROJECT")
     return NextResponse.json({ project })
-  } catch (e) {
-    return NextResponse.json({ error: 'INVALID_PROJECT' }, { status: 404 })
+  } catch (e: any) {
+    return NextResponse.json({ error: e.message }, { status: 404 })
   }
 }
