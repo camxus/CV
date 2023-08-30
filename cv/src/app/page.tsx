@@ -27,7 +27,7 @@ export default function Home() {
       <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         {
           projects?.map(
-            p => <Button href={`/details?project=${p.id}`} title={`${p.title}`} short_desc={`${p.short_desc}`} />
+            p => <Button key={p.id} href={`/details?project=${p.id}`} title={`${p.title}`} short_desc={`${p.short_desc}`} />
           )
         }
       </div>
