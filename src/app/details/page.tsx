@@ -41,7 +41,7 @@ function Details() {
                     {project.media && <div className="bg-white relative md:w-[30%] hover:md:w-[40%] w-100 md:h-full h-[30%] hover:h-[60%] hover:md:h-full transition-[height, width] ease-in-out duration-300">
                         <Image className='object-cover' src={project.media} alt={''} layout='fill' />
                     </div>}
-                    <div className="bg-black md:flex flex-col justify-center w-full min-h-full p-4 md:px-20">
+                    <div className="bg-black md:flex flex-col w-full h-full p-4 md:p-20 overflow-scroll">
                         <div className="flex flex-col md:flex-row gap-4 w-full justify-between">
                             <H1 className='text-white'>{project.title}</H1>
                             <div className="flex gap-2">
