@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import projects from "@/data/projects.js"
 import { Project } from "@/types/projects"
 import { NextRequest, NextResponse } from "next/server"
