@@ -1,8 +1,12 @@
+import spotify_to_applemusic from "@/assets/gif/spotify-to-applemusic.gif"
+import personal_documentation from "@/assets/gif/personal-documentation.gif"
+import webshop from "@/assets/gif/webshop.gif"
+
 export default [
     {
         id: "spotify-to-apple",
         title: "Spotify to Apple Music",
-        media: "/spotify-to-applemusic.gif",
+        media: spotify_to_applemusic,
         github: "https://github.com/camxus/SPOTIFY_TO_APPLE_MUSIC",
         url: "https://https://spotify-to-applemusic.vercel.app/",
         short_desc: "Search Spotify and recieve Apple Music Links",
@@ -35,7 +39,7 @@ export default [
     {
         id: "personal-documentation",
         title: "Personal Documentation",
-        media: "/personal-documentation.gif",
+        media: personal_documentation,
         github: "https://github.com/camxus/personal-documentation",
         url: "https://personal-documentation.vercel.app/",
         short_desc: "Personal Documentation using Storybook",
@@ -96,7 +100,7 @@ export default [
     {
         id: "webshop",
         title: "Webshop",
-        media: "/webshop.gif",
+        media: webshop,
         github: "https://github.com/camxus/TENWi-WEBSHOP",
         url: "https://tenwi.er/shop/",
         short_desc: "Headless Webshop Application using WooCommerce and React",
