@@ -1,5 +1,6 @@
 import spotify_to_applemusic from "@/assets/gif/spotify-to-applemusic.gif"
 import personal_documentation from "@/assets/gif/personal-documentation.gif"
+import studio_application from "@/assets/gif/studio-application.gif"
 import webshop from "@/assets/gif/webshop.gif"
 
 export default [
@@ -64,7 +65,7 @@ export default [
     {
         id: "studio-application",
         title: "Product Showcase: Business Event Scheduling",
-        media: "",
+        media: studio_application,
         github: "https://github.com/camxus/STUDIO-APPLICATION",
         url: "",
         short_desc: "Event Scheduling Application using React Native",
