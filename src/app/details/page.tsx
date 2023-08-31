@@ -33,7 +33,7 @@ function Details() {
         return (
             <main>
                 <Intro title={project.title} />
-                <a className="fixed z-50 p-5 animate-fade" href='/'>
+                <a className="fixed z-50 p-5 animate-fade mix-blend-difference" href='/'>
                     <ArrowLeft className="absolute animate-ping" color='white' />
                     <ArrowLeft className='absolute' color='white' />
                 </a>
