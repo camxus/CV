@@ -1,17 +1,18 @@
-import spotify_to_applemusic from "@/assets/gif/spotify-to-applemusic.gif"
-import personal_documentation from "@/assets/gif/personal-documentation.gif"
-import studio_application from "@/assets/gif/studio-application.gif"
-import webshop from "@/assets/gif/webshop.gif"
+import spotify_to_applemusic from "@/assets/gif/spotify-to-applemusic.gif";
+import personal_documentation from "@/assets/gif/personal-documentation.gif";
+import studio_application from "@/assets/gif/studio-application.gif";
+import webshop from "@/assets/gif/webshop.gif";
+import roomSwap from "@/assets/gif/room-swap.gif";
 
 export default [
-    {
-        id: "spotify-to-apple",
-        title: "Spotify to Apple Music",
-        media: spotify_to_applemusic,
-        github: "https://github.com/camxus/SPOTIFY_TO_APPLE_MUSIC",
-        url: "https://https://spotify-to-applemusic.vercel.app/",
-        short_desc: "Search Spotify and recieve Apple Music Links",
-        long_desc: `<p>Welcome to my project showcase featuring the "Spotify to Apple Music Conversion Tool." As a passionate developer, I sought to create a seamless solution for music enthusiasts looking to effortlessly transition their favorite tracks from Spotify to Apple Music. This project showcases my skills in web development, API integration, and user experience design.</p>
+  {
+    id: "spotify-to-apple",
+    title: "Spotify to Apple Music",
+    media: spotify_to_applemusic,
+    github: "https://github.com/camxus/SPOTIFY_TO_APPLE_MUSIC",
+    url: "https://https://spotify-to-applemusic.vercel.app/",
+    short_desc: "Search Spotify and recieve Apple Music Links",
+    long_desc: `<p>Welcome to my project showcase featuring the "Spotify to Apple Music Conversion Tool." As a passionate developer, I sought to create a seamless solution for music enthusiasts looking to effortlessly transition their favorite tracks from Spotify to Apple Music. This project showcases my skills in web development, API integration, and user experience design.</p>
     
     <h2>Project Overview:</h2>
     <p>The centerpiece of this showcase is the React-based web application's Home component. This dynamic and user-friendly interface empowers users to smoothly convert their music selections while maintaining an engaging aesthetic. The main objectives were to facilitate track conversion, display relevant information, and offer an alternative solution through an Apple Shortcut.</p>
@@ -35,16 +36,16 @@ export default [
     <p>The "Spotify to Apple Music Conversion Tool" project exemplifies my ability to design and develop innovative solutions that address real-world challenges. Through this showcase, I invite you to explore my technical skills, design sensibilities, and dedication to creating user-centered applications. This project encapsulates my commitment to enhancing digital experiences and making technology accessible to all music enthusiasts.</p>
     
     <p>Thank you for taking the time to explore this project, and I invite you to connect with me to learn more about my journey as a developer.</p>
-</body>`
-    },
-    {
-        id: "personal-documentation",
-        title: "Personal Documentation",
-        media: personal_documentation,
-        github: "https://github.com/camxus/personal-documentation",
-        url: "https://personal-documentation.vercel.app/",
-        short_desc: "Personal Documentation using Storybook",
-        long_desc: `In this section, I delve into the realm of coding practices and principles that I've meticulously gathered and refined over the course of my years of experience in the software development field. Through the powerful medium of Storybook, I've curated an immersive experience that takes you through the intricacies of my coding journey, complete with insightful notations and illuminating screenshots, all presented in a captivating blog format.</p>
+</body>`,
+  },
+  {
+    id: "personal-documentation",
+    title: "Personal Documentation",
+    media: personal_documentation,
+    github: "https://github.com/camxus/personal-documentation",
+    url: "https://personal-documentation.vercel.app/",
+    short_desc: "Personal Documentation using Storybook",
+    long_desc: `In this section, I delve into the realm of coding practices and principles that I've meticulously gathered and refined over the course of my years of experience in the software development field. Through the powerful medium of Storybook, I've curated an immersive experience that takes you through the intricacies of my coding journey, complete with insightful notations and illuminating screenshots, all presented in a captivating blog format.</p>
 
         <h2>Setting the Stage:</h2>
         <p>Coding is more than just lines of text; it's an art form that requires careful consideration, foresight, and the application of best practices. Throughout my career, I've not only strived to write functional code but also to create elegant solutions that stand the test of time. This documentation is a testament to my commitment to continuous improvement and the art of writing exceptional code.</p>
@@ -60,16 +61,16 @@ export default [
         <h2>Connect and Collaborate:</h2>
         <p>If my documentation resonates with you, I'd love to connect. Let's discuss coding philosophies, share experiences, and explore opportunities for collaboration. Together, we can advance the art of coding and make a lasting impact on the digital landscape.</p>
     
-        <p>Thank you for joining me on this journey through coding practices and principles. May it inspire you to embark on your own path of continuous improvement and innovation.</p>`
-    },
-    {
-        id: "studio-application",
-        title: "Product Showcase: Business Event Scheduling",
-        media: studio_application,
-        github: "https://github.com/camxus/STUDIO-APPLICATION",
-        url: "",
-        short_desc: "Event Scheduling Application using React Native",
-        long_desc: `<p>Presenting a practical React Native application tailored for businesses to streamline event scheduling and management. This app reflects my dedication to creating technology that seamlessly integrates with modern business operations.</p>
+        <p>Thank you for joining me on this journey through coding practices and principles. May it inspire you to embark on your own path of continuous improvement and innovation.</p>`,
+  },
+  {
+    id: "studio-application",
+    title: "Product Showcase: Business Event Scheduling",
+    media: studio_application,
+    github: "https://github.com/camxus/STUDIO-APPLICATION",
+    url: "",
+    short_desc: "Event Scheduling Application using React Native",
+    long_desc: `<p>Presenting a practical React Native application tailored for businesses to streamline event scheduling and management. This app reflects my dedication to creating technology that seamlessly integrates with modern business operations.</p>
 
         <h2>Empowering Business Operations:</h2>
         <p>At the heart of this application is a thoughtfully designed set of features aimed at empowering businesses to efficiently manage their event schedules. From optimized user profiles to intuitive event scheduling, secure token purchases through PayPal, and API-driven door access control, this app converges various aspects of business event management into a cohesive, user-friendly platform.</p>
@@ -96,16 +97,16 @@ export default [
     
         <h2>Embrace the Future of Business Event Management:</h2>
         <p>Experience the potential of this React Native application—a testament to my skills, creativity, and commitment to crafting solutions that foster positive change in the business landscape. Whether you're a business owner, a tech enthusiast, or a potential collaborator, this app invites you to explore a realm of possibilities.</p>
-    `
-    },
-    {
-        id: "webshop",
-        title: "Webshop",
-        media: webshop,
-        github: "https://github.com/camxus/TENWi-WEBSHOP",
-        url: "https://tenwi.er/shop/",
-        short_desc: "Headless Webshop Application using WooCommerce and React",
-        long_desc: `<p>Headless webshop solution, crafted using the power of React and integrated with WooCommerce. This remarkable webshop represents my dedication to building tailored e-commerce solutions that combine modern frontend technology with the robust database handling capabilities of WooCommerce.</p>
+    `,
+  },
+  {
+    id: "webshop",
+    title: "Webshop",
+    media: webshop,
+    github: "https://github.com/camxus/TENWi-WEBSHOP",
+    url: "https://tenwi.er/shop/",
+    short_desc: "Headless Webshop Application using WooCommerce and React",
+    long_desc: `<p>Headless webshop solution, crafted using the power of React and integrated with WooCommerce. This remarkable webshop represents my dedication to building tailored e-commerce solutions that combine modern frontend technology with the robust database handling capabilities of WooCommerce.</p>
 
         <h2>Empowering E-Commerce:</h2>
         <p>At its core, this headless webshop is designed to empower businesses with a flexible and efficient online sales platform. By leveraging React for the frontend and WooCommerce for database handling, it offers a cohesive experience that blends modern design with seamless data management.</p>
@@ -130,6 +131,38 @@ export default [
     
         <h2>Explore the Future of E-Commerce:</h2>
         <p>Experience the power of this headless webshop—a fusion of cutting-edge React frontend and WooCommerce's database handling capabilities. Whether you're a business owner seeking a modern e-commerce solution, a tech enthusiast, or a potential collaborator, this webshop invites you to explore the limitless possibilities of online retail.</p>
-    `
-    }
-]
+    `,
+  },
+  {
+    id: "room-swap",
+    title: "Product Showcase: React Native Social App for Apartments",
+    media: roomSwap,
+    github: "",
+    url: "",
+    short_desc: "React Native App for users to swap rooms",
+    long_desc: `<p>Welcome to RoomSwap, the groundbreaking app that connects users worldwide for room swaps in different cities. Crafted with the power of React Native and seamlessly integrated with Expo, this app redefines the way you experience living spaces. Explore the key features and dive into the technology stack that powers this innovative room-swapping platform.</p>
+
+        <h2>Key Features:</h2>
+        <ol>
+            <li><strong>User Authentication:</strong> Securely connect with fellow room swappers through a robust user authentication system, ensuring a trusted and reliable community.</li>
+            <li><strong>Room Creation and Editing:</strong> Showcase your space with ease. Upload photos, add descriptions, and edit room details to attract potential swaps.</li>
+            <li><strong>Real-time Chat:</strong> Communicate seamlessly with potential roommates through our real-time chat feature. Discuss details, ask questions, and plan your room swap effortlessly.</li>
+            <li><strong>Profile Creation and Editing:</strong> Build a personalized profile that reflects your lifestyle and preferences, enhancing your chances of finding the perfect room swap.</li>
+            <li><strong>Map Function:</strong> Explore cities visually with our integrated map function. Identify potential swaps in your desired neighborhoods and discover hidden gems.</li>
+            <li><strong>Room Searching via Swipe View:</strong> Swipe your way through a curated selection of available rooms. Find the ideal match with a simple swipe right.</li>
+            <li><strong>Room Requesting:</strong> Express your interest by sending room requests. Connect with users open to swapping and start planning your exciting adventure.</li>
+            <li><strong>Room Sharing via URL:</strong> Share your room listings effortlessly with friends or on social media. Increase your chances of finding the perfect match by spreading the word.</li>
+        </ol>
+        <br/>
+        <h2>Tech Stack:</h2>
+        <p>This app leverages a cutting-edge technology stack to ensure a seamless and responsive experience:</p>
+        <ul>
+        <li>React Native: Enjoy a seamless and responsive user experience on both iOS and Android platforms.</li>
+        <li>Expo: Rapidly develop, iterate, and deploy your app with Expo's powerful tools and libraries.</li>
+        <li>AWS S3: Securely store and retrieve room images with Amazon S3, ensuring reliability and scalability.</li>
+        <li>AWS DynamoDB: Utilize a fully managed NoSQL database for user profiles, room data, and more.</li>
+        <li>GraphQL: Streamline data queries and optimize performance with GraphQL, providing a flexible communication layer between client and server.</li>
+        </ul>
+    `,
+  },
+];
