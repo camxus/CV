@@ -10,7 +10,7 @@ export default [
     title: "Spotify to Apple Music",
     media: spotify_to_applemusic,
     github: "https://github.com/camxus/SPOTIFY_TO_APPLE_MUSIC",
-    url: "https://https://spotify-to-applemusic.vercel.app/",
+    url: "https://spotify-to-applemusic.vercel.app/",
     short_desc: "Search Spotify and recieve Apple Music Links",
     long_desc: `<p>Welcome to my project showcase featuring the "Spotify to Apple Music Conversion Tool." As a passionate developer, I sought to create a seamless solution for music enthusiasts looking to effortlessly transition their favorite tracks from Spotify to Apple Music. This project showcases my skills in web development, API integration, and user experience design.</p>
     
