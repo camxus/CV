@@ -232,6 +232,29 @@ export default function Portfolio() {
               <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
             </div>
           </section>
+          <section className="md:block hidden min-h-screen snap-start flex items-center justify-center p-4 md:p-8 relative">
+            <div className="max-w-2xl w-full relative pb-32">
+
+              <div className="flex lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
+                <ProfileCard
+                  avatarUrl="https://avatars.githubusercontent.com/u/27239831?v=4"
+                  behindGlowEnabled={false}
+                  iconUrl=""
+                  enableMobileTilt={true}
+                  showUserInfo={true}
+                  name="Camillus Konkwo"
+                  title="Fullstack Developer"
+                  handle="camxus"
+                  status="Building fframess"
+                  contactText="Get in Touch"
+                  onContactClick={() => window.open("mailto:camillus.konkwo+github@gmail.com", "_blank")}
+                  className="grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              {/* Gradual blur effect at bottom */}
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+            </div>
+          </section>
         </div>
 
         {/* Right side - Profile card (sticky) */}
@@ -252,22 +275,6 @@ export default function Portfolio() {
           />
         </div>
       </div>
-    </div>
-    <div className="flex md:hidden lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
-      <ProfileCard
-        avatarUrl="https://avatars.githubusercontent.com/u/27239831?v=4"
-        behindGlowEnabled={false}
-        iconUrl=""
-        enableMobileTilt={true}
-        showUserInfo={true}
-        name="Camillus Konkwo"
-        title="Fullstack Developer"
-        handle="camilluskn"
-        status="Building fframess"
-        contactText="Get in Touch"
-        onContactClick={() => window.open("mailto:camillus.konkwo+github@gmail.com", "_blank")}
-        className="grayscale hover:grayscale-0 transition-all duration-300"
-      />
     </div>
   </>
   )
