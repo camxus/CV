@@ -252,8 +252,6 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      
-        </div>
     </div>
     <div className="flex md:hidden lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
           <ProfileCard
