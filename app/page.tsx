@@ -254,20 +254,21 @@ export default function Portfolio() {
       </div>
     </div>
     <div className="flex md:hidden lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
-          <ProfileCard
-            avatarUrl="/professional-developer-portrait.png"
-            behindGlowEnabled={false}
-            iconUrl=""
-            enableMobileTilt={true}
-            showUserInfo={true}
-            name="Camillus Konkwo"
-            title="Fullstack Developer"
-            handle="camilluskn"
-            status="Building fframess"
-            contactText="Get in Touch"
-            onContactClick={() => window.open("mailto:camillus.konkwo+github@gmail.com", "_blank")}
-            className="grayscale hover:grayscale-0 transition-all duration-300"
-          />
-    </>
+      <ProfileCard
+        avatarUrl="/professional-developer-portrait.png"
+        behindGlowEnabled={false}
+        iconUrl=""
+        enableMobileTilt={true}
+        showUserInfo={true}
+        name="Camillus Konkwo"
+        title="Fullstack Developer"
+        handle="camilluskn"
+        status="Building fframess"
+        contactText="Get in Touch"
+        onContactClick={() => window.open("mailto:camillus.konkwo+github@gmail.com", "_blank")}
+        className="grayscale hover:grayscale-0 transition-all duration-300"
+      />
+    </div>
+  </>
   )
 }
