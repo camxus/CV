@@ -71,8 +71,8 @@ const projects = [
 
 export default function Portfolio() {
   return (<>
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <div className="flex flex-col lg:flex-row h-screen md:max-h-[80vh] max-h-[80vw]">
+    <div className="min-h-screen bg-white flex flex-col items-start justify-center">
+      <div className="flex flex-col lg:flex-row h-screen md:max-h-[80vh]">
         {/* Left side - Scrollable content */}
         <div className="flex-1 overflow-y-scroll snap-y snap-mandatory">
           {/* Section 1 - Intro */}
@@ -255,7 +255,7 @@ export default function Portfolio() {
     </div>
     <div className="flex md:hidden lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
       <ProfileCard
-        avatarUrl="/professional-developer-portrait.png"
+        avatarUrl="https://avatars.githubusercontent.com/u/27239831?v=4"
         behindGlowEnabled={false}
         iconUrl=""
         enableMobileTilt={true}
