@@ -72,7 +72,7 @@ const projects = [
 export default function Portfolio() {
   return (<>
     <div className="min-h-screen bg-white flex flex-col items-start justify-center">
-      <div className="flex flex-col lg:flex-row h-screen md:max-h-[80vh]">
+      <div className="flex flex-col lg:flex-row h-screen md:max-h-[80vh] w-full">
         {/* Left side - Scrollable content */}
         <div className="flex-1 overflow-y-scroll snap-y snap-mandatory">
           {/* Section 1 - Intro */}
