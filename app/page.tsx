@@ -232,7 +232,7 @@ export default function Portfolio() {
               <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
             </div>
           </section>
-          <section className="md:block hidden min-h-screen snap-start flex items-center justify-center p-4 md:p-8 relative">
+          <section className="md:hidden block min-h-screen snap-start flex items-center justify-center p-4 md:p-8 relative">
             <div className="max-w-2xl w-full relative pb-32">
 
               <div className="flex lg:w-[400px] lg:h-screen lg:sticky lg:top-0 items-center justify-center p-8 bg-gray-50 lg:bg-white">
