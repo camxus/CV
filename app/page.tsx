@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useRef, useState } from "react"
 import { ProfileCard } from "@/components/profile-card"
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
@@ -73,6 +74,32 @@ export default function Portfolio() {
   // Duplicate the array so the marquee loops seamlessly
   const marqueeItems = [...techStack, ...techStack]
 
+  // Drag-to-scroll (mouse + touch)
+  const trackRef = useRef<HTMLDivElement>(null)
+  const [isDragging, setIsDragging] = useState(false)
+  const dragStart = useRef({ x: 0, active: false })
+
+  const getClientX = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) =>
+    "touches" in e ? e.touches[0].clientX : e.clientX
+
+  const onDragStart = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
+    dragStart.current = { x: getClientX(e), active: true }
+    setIsDragging(true)
+  }
+
+  const onDragMove = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
+    if (!dragStart.current.active || !trackRef.current) return
+    const dx = getClientX(e) - dragStart.current.x
+    const current = new DOMMatrix(getComputedStyle(trackRef.current).transform).m41
+    trackRef.current.style.transform = `translateX(${current + dx}px)`
+    dragStart.current.x = getClientX(e)
+  }
+
+  const onDragEnd = () => {
+    dragStart.current.active = false
+    setIsDragging(false)
+  }
+
   return (
     <>
       {/* Inject keyframes via a style tag — works in Next.js App Router */}
@@ -82,17 +109,20 @@ export default function Portfolio() {
           100% { transform: translateX(-50%); }
         }
         .marquee-track {
-          /* width = 2× the content so the duplicate is already off-screen */
           display: flex;
           width: max-content;
           animation: marquee 22s linear infinite;
+          cursor: grab;
         }
-        .marquee-track:hover {
+        .marquee-track.paused {
           animation-play-state: paused;
+        }
+        .marquee-track.dragging {
+          animation-play-state: paused;
+          cursor: grabbing;
         }
         .marquee-wrapper {
           overflow: hidden;
-          /* Edge fade */
           -webkit-mask-image: linear-gradient(
             to right,
             transparent 0%,
@@ -159,7 +189,17 @@ export default function Portfolio() {
 
                     {/* ── Infinite marquee ── */}
                     <div className="marquee-wrapper">
-                      <div className="marquee-track">
+                      <div
+                        ref={trackRef}
+                        className={`marquee-track${isDragging ? " dragging" : ""}`}
+                        onMouseDown={onDragStart}
+                        onMouseMove={onDragMove}
+                        onMouseUp={onDragEnd}
+                        onMouseLeave={onDragEnd}
+                        onTouchStart={onDragStart}
+                        onTouchMove={onDragMove}
+                        onTouchEnd={onDragEnd}
+                      >
                         {marqueeItems.map((tech, index) => (
                           <div
                             key={`${tech.name}-${index}`}
