@@ -158,12 +158,12 @@ export default function Portfolio() {
                     <h2 className="text-xl md:text-2xl font-semibold mb-4">Tech Stack</h2>
 
                     {/* ── Infinite marquee ── */}
-                    <div className="marquee-wrapper grayscale">
+                    <div className="marquee-wrapper">
                       <div className="marquee-track">
                         {marqueeItems.map((tech, index) => (
                           <div
                             key={`${tech.name}-${index}`}
-                            className="flex flex-col items-center gap-2 p-3 rounded-lg flex-shrink-0"
+                            className="flex flex-col items-center gap-2 p-3 rounded-lg flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
                           >
                             <Image
                               src={tech.logo || "/placeholder.svg"}
