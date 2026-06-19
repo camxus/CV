@@ -26,6 +26,13 @@ const techStack = [
 ]
 
 const projects = [
+   {
+    title: "TENWI.eu | Headless WooCommerce Webshop",
+    description:
+      "Modern e-commerce platform built with a headless WooCommerce architecture. Features a custom React frontend, optimized checkout flows, and seamless product management for a fast, scalable shopping experience.",
+    website: "https://tenwi.eu",
+    github: "https://github.com/camxus/TENWI-WEBSHOP",
+  },
   {
     title: "fframess",
     description:
